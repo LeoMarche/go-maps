@@ -13,7 +13,7 @@ RUN go mod download
 COPY . .
 
 # Build
-RUN go build -o /gomaps
+RUN go build -o gomaps
 
 # Run as user 1001
 USER 1001
