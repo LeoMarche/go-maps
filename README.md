@@ -10,3 +10,4 @@ Little kata to experiment with APIs/Graphs/SpatialData/Docker/DockerCompose
 - Refacto Dockerfile to be multi stage and have a lighter final image (currently ~700MB)
 - Use docker-compose to put a reverse proxy in front of the app in `docker-compose.yml`
 - Refactor/Rename/Document all files
+- Implement proper logging and STDOUT for the app in all files
