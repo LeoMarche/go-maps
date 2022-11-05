@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -36,6 +37,8 @@ func main() {
 
 	// Create graph from roads
 	g, mapping, reverseMapping, m, err := linestringops.CreateGraph(lineStringTab)
+	fmt.Println((*lineStringTab)[0].Coords())
+	fmt.Println((*lineStringTab)[1000].Coords())
 
 	if err != nil {
 		log.Fatal(err)
